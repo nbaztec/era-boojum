@@ -21,6 +21,7 @@
 #![allow(dead_code)]
 #![allow(dropping_references)] // Required to explicitly show that mutable references are dropped.
 #![allow(incomplete_features)]
+#![allow(internal_features)]
 // Enabled features
 #![feature(allocator_api)]
 #![feature(const_mut_refs)]
@@ -43,12 +44,11 @@
 #![feature(generic_const_exprs)]
 #![feature(iter_array_chunks)]
 // #![recursion_limit = "1024"]
-#![feature(stdsimd)]
+#![feature(stdarch_x86_avx512)]
 #![feature(avx512_target_feature)]
 #![feature(associated_type_defaults)]
 #![feature(trait_alias)]
 #![feature(vec_push_within_capacity)]
-#![feature(return_position_impl_trait_in_trait)]
 #![feature(type_changing_struct_update)]
 #![feature(slice_flatten)]
 
